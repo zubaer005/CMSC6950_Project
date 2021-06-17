@@ -25,7 +25,7 @@ Kabir Zubaer
 
 ## Computational Tasks
 
-**Task no.1** - Calculating data from a specific region and over 12 months into an x.array.Dataset
+**Task no.1** - Calculating data from Oceania region and over 12 months into an x.array.Dataset
 
 
 
