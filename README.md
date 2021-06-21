@@ -12,7 +12,7 @@ Kabir Zubaer
 	conda install pandas
 	pip install geopandas
 	conda install -c conda-forge argopy
-
+	conda install -c conda-forge basemap-data-hires
 ```
 
 ## Start working
@@ -25,9 +25,9 @@ Kabir Zubaer
 
 ## Computational Tasks
 
-**Task no.1** - Calculating data from Oceania region and over 12 months into an x.array.Dataset
+**Task no.1** - Calculating data from Oceania region and over 6 months into an x.array.Dataset
+<img src="monthly.png" >
 
 
-
-**Task no.2** - Correlation study of variables pertaining to arbitrary profiles of four argos, using scatter-plot, histogram, and Pearson's r coefficient.
+**Task no.2** - Correlation study of  Level, Pressure, Salinity, and Temperature for each month from June 2015 to December 2015 in a region Oceania.
 
