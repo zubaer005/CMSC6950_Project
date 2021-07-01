@@ -14,16 +14,9 @@
 \maketitle
 \section{Introduction}
 
-The ocean is a key component of the Earth’s climate system. It therefore needs continuous
-real-time monitoring to help scientists better understand its dynamics and to predict its evolution. All around the world, oceanographers have managed to join their efforts and set up a
-Global Ocean Observing System among which Argo is a key component.
+Water covers more than two-thirds of the Earth’s surface. The deep waters are home to wildlife and some of the enormous creatures on Earth. Argo brings a solution for oceanographers to monitor the Global Ocean. It is a worldwide network of almost 4000 independent probes measuring pressure, temperature, and salinity from the surface to 2000m depth every ten days. The probes installed in every 60o parallels and information from the ocean are collected using satellite. The authority managed several data centers, merged in a single dataset which is open for all. The dataset is available using ftp server or monthly zip snapshots.
 
-Argo is a global network of nearly 4000 autonomous probes measuring pressure, temperature
-and salinity from the surface to 2000m depth every 10 days. The localisation of these probes
-is nearly random between the 60o parallels (see live coverage here). Data from the probes
-are collected by satellite in real-time, processed by several data centers, merged in a single
-dataset (comprising of more than 2.3 million vertical profiles as of June 2020) and made freely
-available to anyone through an ftp server or monthly zip snapshots.
+Argo dataset is complex to understand and difficult to access Argo data consists of thousands of files. In this project I used A Python library for Argo ocean data analysis called Argopy. Argopy has two critical features made it easier for the users, these are its Data fetching and its ability to provide data formatting. In this project, I have included both Data fetching and data formatting features. 
 
 \section{Results}
 
@@ -31,7 +24,7 @@ Herein, the results for each computational task will be presented. The first com
   
 \subsection{Task 1- Total Argo float numbers through time}
 
-The aim of my first computational task = to retrieve Argo float data collected from June 2015 to December 2015 using argopy and then use this data to visualize the change in the total number of Argo floats per month within a region of the Oceania.  
+The aim of my first computational task is to retrieve Argo float data collected from June 2015 to December 2015 using argopy and then use this data to visualize the change in the total number of Argo floats per month within a region of the Oceania.  
 
 \begin{figure}[H]
 \includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{monthly.png}
