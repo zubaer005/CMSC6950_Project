@@ -23,8 +23,24 @@ Argo dataset is complex to understand and difficult to access Argo data consists
 Herein, the results for each computational task will be presented. The first computational task will focus on visualizing the position of Argo floats in a region Oceania,  and how the total number of floats changes each year. The second computational task is used to visualize the trajectory and temperature variation of two Argo floats with time since the float's deployment.
   
 \subsection{Task 1- Total Argo float numbers through time}
-
 The aim of my first computational task is to retrieve Argo float data collected from June 2015 to December 2015 using argopy and then use this data to visualize the change in the total number of Argo floats per month within a region of the Oceania.  
+
+
+
+\verb|Data fetching|
+
+One of the features of Argopy is import data using the API of Argo data through a simple call. To fetch data from argo I used following tecnique:
+\begin{itemize}
+     \item import data using  \verb|DataFetcher as ArgoDataFetcher|
+     \item Fetch data between 140/150W, 35/, 50N, from 0 to 100db and from June 2015 to December 2015
+    \item Next use \verb|argo_loader.region().to_xarray()| which takes longitude, latitude, and time period as arguments, and 
+     returns the argo data in multidimensional \verb|xarray|.
+     \item Finally .
+\end{itemize}
+Change in  for an area of interest within a certain time frame.
+
+
+The image explains the total number of Argo floats data of the Oceania collected from June 2015 to December 2015.
 
 \begin{figure}[H]
 \includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{monthly.png}
@@ -32,9 +48,6 @@ The aim of my first computational task is to retrieve Argo float data collected 
 \label{fig:task 1}
  
 \end{figure}
-
-
-
 
 \subsection{Task 2 - Showing Level, Pressure, Salinity, and Temperature through time.}
 
@@ -49,5 +62,13 @@ In this task I try to find out Level, Pressure, Salinity, and Temperature for ea
 
 \section{Conclusion}
 In this task, I try to solve two computational tasks involving argopy, I have fetched data from external sources for the period of six months. In case of ploting and visualization I used different python library.
+
+
+\begin{thebibliography}{9}
+    \bibitem{latexcompanion} 
+    Maze et al.,
+    \textit{argopy: A Python library for Argo ocean data analysis.}. 
+    Journal of Open Source Software, 5(53), 2425, 2020.
+\end{thebibliography}
 
 \end{document}
